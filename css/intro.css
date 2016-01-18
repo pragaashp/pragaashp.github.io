@@ -1,0 +1,115 @@
+/*@-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: rotateX(30deg);
+        transform: rotateX(30deg);
+    }
+    30%
+    {
+        -webkit-transform: rotateX(-30deg);
+       transform: rotateX(-30deg);
+    } 
+    45%
+    {
+        -webkit-transform: rotateX(20deg);
+        transform: rotateX(20deg);
+    }
+    60%
+    {
+        -webkit-transform: rotateX(-20deg);
+        transform: rotateX(-20deg);
+    }
+    75%
+    {
+        -webkit-transform: rotateX(10deg);
+        transform: rotateX(10deg);
+    }
+    90%
+    {
+        -webkit-transform: rotateX(-10deg);
+        transform: rotateX(-10deg);
+    }
+    100%
+    {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: rotateX(50deg);
+        transform: rotateX(50deg);
+    }
+    30%
+    {
+        -webkit-transform: rotateX(-50deg);
+        transform: rotateX(-50deg);
+    }
+    50%
+    {
+        -webkit-transform: rotateX(30deg);
+        transform: rotateX(30deg);
+    }
+    65%
+    {
+        -webkit-transform: rotateX(-30deg);
+        transform: rotateX(-30deg);
+    }
+    80%
+    {
+        -webkit-transform: rotateX(20deg);
+        transform: rotateX(20deg);
+    }
+    100%
+    {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+    }
+}
+
+
+.swing:hover
+{
+    -webkit-animation: swing 2s ease;
+    animation: swing 2s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}*/
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+#cross-fade img {
+    position: absolute;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#cross-fade img.cf-top:hover {
+    opacity:0;
+}

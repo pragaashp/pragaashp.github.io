@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+		<meta char="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pragaash Ponnusamy</title>
+        <script src="./js/jquery-2.1.1.min.js"></script>
+        <script src="./bs3/js/bootstrap.js"></script>
+        <script src="./js/validator.min.js"></script>
+        <script src="./js/test.js"></script>
+		<link rel="stylesheet" href="./bs3/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/styles.css">
+		<link rel="stylesheet" href="./css/intro.css">
+        <link rel="stylesheet" href="./css/animate.css">
+		<link href='https://fonts.googleapis.com/css?family=Exo+2:400,300,300italic,400italic,500,500italic,600,600italic,700,100,100italic,200,200italic|Open+Sans:300italic,400italic,400,300,600|Dancing+Script:400,700' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<!--Navigation Header-->
+		<div class="navbar transparent navbar-static-top">
+			<div class="container">
+				<!-- <a href="index.html" class="navbar-brand" id="bplate" title="Home"></a> -->
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse" title="Menu">
+					<span class="glyphicon glyphicon-option-horizontal"></span>
+					<!-- <span class="icon-bar"></span>
+					<span class="icon-bar"></span> -->
+				</button>
+				<div class="collapse navbar-collapse navHeaderCollapse">
+					<ul class="nav navbar-nav navbar-right" id="navBar">
+						<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a></li>
+						<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects</a></li>
+						<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact</a></li>
+						<!-- <li><a href="#" id="connectMe">View Images</a></li> -->
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--Landing Carousel-->
+		<div class="jumbotron">
+			<div class="container">
+				<h1 id="mainTitle"><span class="empty-block">.</span> <span class="writer">Welcome</span> <span class="empty-block">.</span></h1><br>
+                <h3 id="subTitle">. <span class="subwriter"></span> .</h3>
+			</div>
+		</div>
+        
+        <!-- About -->
+        <div class="aboutMe">
+            <div class="container">
+                <h2 class="header">Get To Know Me</h2>
+            </div>
+        </div>
+        
+         <!-- Work -->
+        <div class="Work">
+            <div class="container">
+                <h2 class="header">My Work</h2>
+            </div>
+        </div>
+        
+         <!-- Contact -->
+        <div class="Contact">
+            <div class="container">
+                <div class="col-left pull-left">
+                    <h2 class="header-left">Reach Me</h2>
+                    <div class="separator-line"></div>
+                    <p>Email: pragaashp@berkeley.edu<br>
+                        Mobile: +1 (510) 229-2167
+                    </p>
+                    <br><br><br><br><br>
+                    <p class="credits">
+                        &#169 2016 Pragaash Ponnusamy<br>
+                        Designed Using Twitter Bootstrap<br>
+                        Background vector designed by <a id="footer-link" href="http://www.freepik.com/free-photos-vectors/background">Freepik</a>
+                    </p>
+                </div>
+                <div class="col-right pull-right">
+                    <h2 class="header-right">Get In Touch</h2>
+                    <div class="separator-line"></div>
+                    <form role="form" id="contactForm">
+                        <div class="row">
+                            <div class="form-group col-sm-6">
+                                <input type="text" data-error="*Required" class="form-control" id="name" placeholder="Enter Name" name="name" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <input type="text" data-error="*Required" class="form-control" id="email" placeholder="Enter Email" name="_replyto" required>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" data-error="*Required" class="form-control" id="subject" placeholder="Enter Subject" name="_subject" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                        <div class="form-group">
+                                <textarea id="message" class="form-control" rows="5" placeholder="How can I help you?" required></textarea>
+                            </div>
+                            <input type="submit" value="Send" id="form-submit" class="btn btn-success btn-lg pull-right"></input>
+                        <div id="msgSubmit" class="pull-left" name="msgSubmit"></div>
+                        <input type="hidden" name="_next" value="#msgSubmit"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+		<!-- Padding Box -->
+		<div class="paddingBox"></div>
+
+		<!--Footer-->
+		<div class="navbar navbar-inverse navbar-fixed-bottom" id="footBar">
+			<div class="container text-center">
+                <a href="https://www.linkedin.com/in/pragaash" class="navbar-btn btn">
+                    <div id="cross-fade">
+					   <img class="cf-bottom" alt="LinkedIn" src="./img/linkedin.png" width="24px" />
+                       <img class="cf-top" alt="LinkedIn" src="./img/linkedin-light.png" width="24px" />
+                    </div>
+				</a>
+				<a href="https://www.github.com/pragaashp" class="navbar-btn btn">
+                    <div id="cross-fade">
+					   <img class="cf-bottom" alt="Github" src="./img/github-dark.png" width="24px" />
+                       <img class="cf-top" alt="Github" src="./img/github-light.png" width="24px" />
+                    </div>
+				</a>
+                <a href="https://www.facebook.com/pragaash.virgo" class="navbar-btn btn">
+                    <div id="cross-fade">
+					   <img class="cf-bottom" alt="Facebook" src="./img/fb-dark.png" width="24px" />
+                       <img class="cf-top" alt="Facebook" src="./img/fb.png" width="24px" />
+                    </div>
+				</a>
+			</div>
+		</div>
+
+		<!--Magellan-->
+		<div class="navbar transparent navbar-fixed-top" id="fadeMenu">
+			<div class="container">
+				<ul class="nav navbar-nav" id="navBar">
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			$(window).scroll(function(){
+
+				if ($(this).scrollTop() > 50 && $(window).innerWidth() > 762) {
+					$('#fadeMenu').fadeIn();
+				}
+				else {
+					$('#fadeMenu').fadeOut();
+				}
+
+			});
+		</script>
+		<script src="./js/typed.js"></script>
+		<script>
+		    $(function(){
+		        $(".writer").typed({
+		            strings: ["Welcome","I'm Pragaash"],
+		            typeSpeed: 0,
+                    backDelay: 1000,
+		            loop: false,
+		            showCursor: false
+		        });
+		    });
+		</script>
+        <script>
+		    $(function(){
+		        $(".subwriter").typed({
+		            strings: ["Software Developer","Data Scientist","Back-End Developer"],
+		            typeSpeed: 0,
+		            loop: true,
+                    backDelay: 1000,
+		            showCursor: true,
+                    cursorChar: "|"
+		        });
+		    });
+		</script>
+	</body>
+
+	<footer>
+		
+	</footer>
+
+</html>
