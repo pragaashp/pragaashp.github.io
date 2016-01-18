@@ -11,18 +11,17 @@ $(document).ready(function() {
 });
 
 function submitMSG(valid, msg) {
-    var msgClasses;
     if (valid) {
-        msgClasses = "pull-left rubberBand animated";
+        $("#confirmMsg").removeClass().addClass("text-center rubberBand animated").text(msg);
     } else {
-        msgClasses = "pull-left text-danger";
+        $("#msgSubmit").removeClass().addClass("pull-left text-danger").text(msg);
     }
-    $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
 
 function formSuccess() {
     $("#contactForm")[0].reset();
-    submitMSG(true, "Thank you. I'll keep in touch.");
+    $("#contactForm").fadeOut("fast");
+    submitMSG(true, "Thank you. I'll keep in touch. Cheers.");
 }
 
 function submitForm() {

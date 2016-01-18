@@ -9,7 +9,7 @@
         <script src="./js/jquery-2.1.1.min.js"></script>
         <script src="./bs3/js/bootstrap.js"></script>
         <script src="./js/validator.min.js"></script>
-        <script src="./js/test.js"></script>
+        <script src="./js/form.js"></script>
 		<link rel="stylesheet" href="./bs3/css/bootstrap.min.css">
 		<link rel="stylesheet" href="./css/styles.css">
 		<link rel="stylesheet" href="./css/intro.css">
@@ -69,17 +69,18 @@
                     <p>Email: pragaashp@berkeley.edu<br>
                         Mobile: +1 (510) 229-2167
                     </p>
-                    <br><br><br><br><br>
+                    <br><br><br><br><br><br>
                     <p class="credits">
                         &#169 2016 Pragaash Ponnusamy<br>
                         Designed Using Twitter Bootstrap<br>
                         Background vector designed by <a id="footer-link" href="http://www.freepik.com/free-photos-vectors/background">Freepik</a>
-                    </p>
+                    </p><br><br><br>
                 </div>
                 <div class="col-right pull-right">
                     <h2 class="header-right">Get In Touch</h2>
                     <div class="separator-line"></div>
-                    <form role="form" id="contactForm">
+                    <div class="text-center" id="confirmMsg"></div>
+                    <form role="form" id="contactForm" style="display:">
                         <div class="row">
                             <div class="form-group col-sm-6">
                                 <input type="text" data-error="*Required" class="form-control" id="name" placeholder="Enter Name" name="name" required>

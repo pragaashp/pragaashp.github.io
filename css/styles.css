@@ -187,6 +187,11 @@ body {
     padding-bottom: 15px;
 }
 
+#confirmMsg {
+    margin-top: 30px;
+    font-family: "Exo 2","serif";
+}
+
 #contactForm {
     font-family: "Exo 2","serif";
 }
