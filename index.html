@@ -9,6 +9,8 @@
         <script src="./js/jquery-2.1.1.min.js"></script>
         <script src="./bs3/js/bootstrap.js"></script>
         <script src="./js/validator.min.js"></script>
+        <script src="./js/velocity.min.js"></script>
+        <script src="./js/effects.js"></script>
         <script src="./js/form.js"></script>
 		<link rel="stylesheet" href="./bs3/css/bootstrap.min.css">
 		<link rel="stylesheet" href="./css/styles.css">
@@ -27,9 +29,9 @@
 				</button>
 				<div class="collapse navbar-collapse navHeaderCollapse">
 					<ul class="nav navbar-nav navbar-right" id="navBar">
-						<li><a href="#about" class="dropdown-toggle">About</a></li>
-						<li><a href="#projects" class="dropdown-toggle">Projects</a></li>
-						<li><a href="#contact" class="dropdown-toggle">Contact</a></li>
+						<li><a href="#" id="go-about" class="dropdown-toggle">About</a></li>
+						<li><a href="#" id="go-work" class="dropdown-toggle">Projects</a></li>
+						<li><a href="#" id="go-contact" class="dropdown-toggle">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -40,17 +42,21 @@
 			<div class="container">
 				<h1 id="mainTitle"><span class="empty-block">.</span> <span class="writer">Welcome</span> <span class="empty-block">.</span></h1><br>
                 <h3 id="subTitle">. <span class="subwriter"></span> .</h3>
+                <br><br><br><br><br><br>
+                <div class="downScroll">
+                    <a href="#" id="go-down"><img class="downIcon" alt="Go Down" src="./img/down.png" width="32px"></a>
+                </div>
 			</div>
 		</div>
         
         <!-- About -->
-        <div class="aboutMe">
+        <div class="aboutMe" id="about-me">
             <div class="container">
                 <h2 class="header">Get To Know Me</h2>
                 <div class="about-col-left pull-left">
                     <div class="separator-line"></div>
                     <div class="about-image text-center">
-                        <img src="./img/placeholder.jpg" height="250px"><br><br>
+                        <img id="me-img" src="./img/placeholder.jpg" height="250px"><br><br>
                     </div>
                 </div>
                 <div class="about-col-right pull-right">
@@ -149,6 +155,7 @@
 		</div>
 
 		<!--Magellan-->
+<!--
 		<div class="navbar transparent navbar-fixed-top" id="fadeMenu">
 			<div class="container">
 				<ul class="nav navbar-nav" id="navBar">
@@ -158,17 +165,16 @@
 				</ul>
 			</div>
 		</div>
+-->
 		
 		<script type="text/javascript">
 			$(window).scroll(function(){
-
 				if ($(this).scrollTop() > 50 && $(window).innerWidth() > 762) {
 					$('#fadeMenu').fadeIn();
 				}
 				else {
 					$('#fadeMenu').fadeOut();
 				}
-
 			});
 		</script>
 		<script src="./js/typed.js"></script>

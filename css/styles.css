@@ -45,23 +45,9 @@ body {
 
 #navBar {
 	font-family: "Source Sans Pro","serif";
-	font-size: 16px;
-    font-weight: 200;
+	font-size: 14px;
+    font-weight: 300;
 }
-/*
-#navBar li.active a {
-	color: #FFBF00;
-	border-radius: 5px;
-	padding-top: 5px;
-	margin: 10px 2.5px;
-	padding-bottom: 5px;
-}
-
-#navBar li.dropdown.open a.dropdown-toggle {
-	color: #FFBF00;
-	border-radius: 5px;
-}
-*/
 
 #navBar li a {
 	padding-top: 5px;
@@ -79,14 +65,6 @@ body {
 	padding-bottom: 5px;
 	border-radius: 20px;
 }
-
-/*
-#navBar li a.dropdown-toggle:active {
-    background: black;
-    color: white;
-    border-radius: 20px;
-}
-*/
 
 #footBar {
 	font-family: "Source Sans Pro","serif";
@@ -125,7 +103,7 @@ body {
 	margin-top: -20px;
 	text-align: center;
 	padding-top: 140px;
-	padding-bottom: 140px;
+	padding-bottom: 80px;
 	background: none;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -137,6 +115,10 @@ body {
 	font-family: "Dancing Script";
 	text-shadow: 0 0 15px white;
 	font-weight: lighter;
+}
+
+.downScroll {
+    opacity: 0.4
 }
 
 .paddingBox {
@@ -181,7 +163,11 @@ body {
 }
 
 .about-image {
-    width: 75%
+    width: 75%;
+}
+
+#me-img {
+    border-radius: 10px;
 }
 
 .about-col-left .separator-line {
@@ -344,6 +330,7 @@ body {
     color: black;
 }
 
+/*
 #fadeMenu {
 	font-family: "Source Sans Pro","serif";
 	display: none;
@@ -353,6 +340,7 @@ body {
 	width: 100%;
 	z-index: 9999;
 }
+*/
 
 #popModal {
 	background: black;
