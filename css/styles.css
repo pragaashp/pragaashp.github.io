@@ -195,6 +195,7 @@ body {
     font-family: "Source Sans Pro","serif";
     font-size: 12px;
     font-weight: 300;
+    color: black;
 }
 
 .container .about-col-right {
@@ -207,6 +208,7 @@ body {
     background-color: #F6F6F6;
     opacity: 0.85;
     padding-bottom: 15px;
+    color: black;
 }
 
 #confirmMsg {
