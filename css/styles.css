@@ -30,7 +30,7 @@ body {
 }
 
 .subwriter {
-    font-family: "Exo 2","serif";
+    font-family: "Source Sans Pro","serif";
     font-weight: 200;
 }
 
@@ -39,16 +39,16 @@ body {
 }
 
 #subTitle {
-    font-family: "Exo 2","serif";
+    font-family: "Source Sans Pro","serif";
     font-weight: 200;
 }
 
 #navBar {
-	font-family: "Exo 2","serif";
+	font-family: "Source Sans Pro","serif";
 	font-size: 16px;
     font-weight: 200;
 }
-
+/*
 #navBar li.active a {
 	color: #FFBF00;
 	border-radius: 5px;
@@ -61,11 +61,14 @@ body {
 	color: #FFBF00;
 	border-radius: 5px;
 }
+*/
 
 #navBar li a {
 	padding-top: 5px;
 	margin: 10px 2.5px;
 	padding-bottom: 5px;
+    border-radius: 20px;
+    background: none;
 }
 
 #navBar li a:hover {
@@ -74,31 +77,19 @@ body {
 	padding-top: 5px;
 	margin: 10px 2.5px;
 	padding-bottom: 5px;
-	border-radius: 5px;
+	border-radius: 20px;
 }
 
-.dropdown-menu {
-	background: #272727;
+/*
+#navBar li a.dropdown-toggle:active {
+    background: black;
+    color: white;
+    border-radius: 20px;
 }
-
-.dropdown-menu li a {
-	font-size: 12px;
-	color: #979797;
-}
-
-#navBar li a#connectMe {
-	padding-top: 4px;
-	padding-bottom: 4px;
-	border-radius: 5px;
-	border: 1px solid #979797;
-}
-
-#navBar li a#connectMe:hover {
-	border-color: #FFBF00;
-}
+*/
 
 #footBar {
-	font-family: "Exo 2","serif";
+	font-family: "Source Sans Pro","serif";
 	font-weight: 0;
 	font-size: 10px;
     font-weight: 100;
@@ -108,7 +99,7 @@ body {
 .footerBox {
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: "Exo 2","serif";
+    font-family: "Source Sans Pro","serif";
     font-weight: 100;
     font-size: 10px;
     text-align: center;
@@ -133,7 +124,6 @@ body {
 .jumbotron {
 	margin-top: -20px;
 	text-align: center;
-	font-family: "Open Sans";
 	padding-top: 140px;
 	padding-bottom: 140px;
 	background: none;
@@ -179,6 +169,38 @@ body {
     padding-bottom: 15px;
 }
 
+.Work .content-work {
+    font-family: "Source Sans Pro","serif";
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.container .about-col-left {
+    width: 60%;
+}
+
+.about-image {
+    width: 75%
+}
+
+.about-col-left .separator-line {
+    width: 75%;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    padding-top: 10px;
+}
+
+.about-col-right p {
+    margin-top: 35px;
+    font-family: "Source Sans Pro","serif";
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.container .about-col-right {
+    width: 40%;
+}
+
 .Contact {
     font-family: "Dancing Script","cursive";
     background: none;
@@ -189,11 +211,11 @@ body {
 
 #confirmMsg {
     margin-top: 30px;
-    font-family: "Exo 2","serif";
+    font-family: "Source Sans Pro","serif";
 }
 
 #contactForm {
-    font-family: "Exo 2","serif";
+    font-family: "Source Sans Pro","serif";
 }
 
 #name {
@@ -261,21 +283,22 @@ body {
 }
 
 .col-left p {
-    font-family: "Exo 2","serif";
+    font-family: "Source Sans Pro","serif";
     font-size: 14px;
-    font-weight: 200;
+    font-weight: 300;
 }
 
 .col-left .credits {
     font-size: 10px;
-    font-style: italic;
+/*    font-style: italic;*/
+    font-weight: 200;
 }
 
-.Contact .container .col-left {
+.container .col-left {
     width: 33%;
 }
 
-.Contact .container .col-right {
+.container .col-right {
     width: 66%;
     text-align: center;
 }
@@ -311,7 +334,7 @@ body {
 
 .navbar-fixed-top {
     background-color: #F6F6F6;
-    opacity: 0.75;
+    opacity: 0.90;
 }
 
 .navbar-fixed-top .navbar-nav a {
@@ -319,7 +342,7 @@ body {
 }
 
 #fadeMenu {
-	font-family: "Exo 2","serif";
+	font-family: "Source Sans Pro","serif";
 	display: none;
 	position: fixed;
 	right: 0;
@@ -330,7 +353,7 @@ body {
 
 #popModal {
 	background: black;
-	font-family: "Open Sans";
+	font-family: "Source Sans Pro","serif";
 	font-size: 12px;
 	color: white;
 	z-index: 99999;
