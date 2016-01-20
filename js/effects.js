@@ -32,4 +32,18 @@ $(document).ready(function() {
            easing: "easeInBack"
         });
     });
+    
+    $(".navbar-toggle").on("click", function() {
+        if ($(".navHeaderCollapse").attr("aria-expanded") == "true") {
+            $(".glyphicon-option-horizontal").velocity({
+                rotateZ:"0"},{
+                easing: "spring"
+            });
+        } else {
+            $(".glyphicon-option-horizontal").velocity({
+                rotateZ:"90deg"},{
+                easing: "spring"
+            });
+        }
+    });
 });

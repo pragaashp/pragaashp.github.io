@@ -50,16 +50,19 @@
 		</div>
         
         <!-- About -->
-        <div class="aboutMe" id="about-me">
+        <div class="aboutMe">
             <div class="container">
-                <h2 class="header">Get To Know Me</h2>
-                <div class="about-col-left pull-left">
+                <div class="col-center">
+                    <h2 class="header">Get In Touch</h2>
                     <div class="separator-line"></div>
-                    <div class="about-image text-center">
-                        <img id="me-img" src="./img/placeholder.jpg" height="250px"><br><br>
+                </div>
+                <div class="about-col-left">
+                    <div class="separator-line"></div>
+                    <div class="about-image">
+                        <img id="me-img" src="./img/placeholder.jpg"><br><br>
                     </div>
                 </div>
-                <div class="about-col-right pull-right">
+                <div class="about-col-right">
                     <p>Hi there! As the title of my page says, I'm Pragaash. I'm a third year (junior) undergraduate at UC Berkeley, working towards a major in Electrical Engineering and Computer Science.<br><br>I'm very passionate about Big Data Analytics and the application of Machine Learning and Data Science in distributed computing. Check out my resume and my social sites below.<br><br>P.S. I love coffee and I'll be down to get a drink sometime.<br><br><br><br>
                     <a href="#" role="button" id="form-submit" class="btn btn-info btn-lg">Resume</a><br><br>
                     </p>
@@ -84,20 +87,22 @@
          <!-- Contact -->
         <div class="Contact">
             <div class="container">
-                <div class="col-left pull-left">
+                <div class="col-left">
                     <h2 class="header-left">Reach Me</h2>
                     <div class="separator-line"></div>
                     <p>Email: pragaashp@berkeley.edu<br>
                         Mobile: +1 (510) 229-2167
                     </p>
-                    <br><br><br><br><br><br>
+                    <div class="credits">
+                        <br><br><br><br><br><br>
+                    </div>
                     <p class="credits">
                         &#169 2016 Pragaash Ponnusamy<br>
                         Designed Using Twitter Bootstrap<br>
                         Background vector designed by <a id="footer-link" href="http://www.freepik.com/free-photos-vectors/background">Freepik</a>
                     </p><br><br><br>
                 </div>
-                <div class="col-right pull-right">
+                <div class="col-right">
                     <h2 class="header-right">Get In Touch</h2>
                     <div class="separator-line"></div>
                     <div class="text-center" id="confirmMsg"></div>
@@ -118,13 +123,16 @@
                         </div>
                         <div class="form-group">
                                 <textarea id="message" class="form-control" rows="5" placeholder="How can I help you?" required></textarea>
-                            </div>
-                            <input type="submit" value="Send" id="form-submit" class="btn btn-success btn-lg pull-right"></input>
-                        <div id="msgSubmit" class="pull-left" name="msgSubmit"></div>
+                        </div>
+                        <input type="submit" value="Send" id="form-submit" class="btn btn-success btn-lg"></input>
+                        <div id="msgSubmit" name="msgSubmit"></div>
                         <input type="hidden" name="_next" value="#msgSubmit"/>
                     </form>
-                </div>
+                </div>   
             </div>
+            <div class="end-credits">
+                <p>&#169 2016 Pragaash Ponnusamy • Designed Using Twitter Bootstrap • Background vector designed by <a id="footer-link" href="http://www.freepik.com/free-photos-vectors/background">Freepik</a></p>
+            </div> 
         </div>
 
 		<!-- Padding Box -->
@@ -167,6 +175,7 @@
 		</div>
 -->
 		
+<!--
 		<script type="text/javascript">
 			$(window).scroll(function(){
 				if ($(this).scrollTop() > 50 && $(window).innerWidth() > 762) {
@@ -177,6 +186,7 @@
 				}
 			});
 		</script>
+-->
 		<script src="./js/typed.js"></script>
 		<script>
 		    $(function(){
@@ -192,7 +202,7 @@
         <script>
 		    $(function(){
 		        $(".subwriter").typed({
-		            strings: ["Software Developer","Data Scientist","Back-End Developer"],
+		            strings: ["Software Engineer","Data Scientist","Full-Stack Developer"],
 		            typeSpeed: 0,
 		            loop: true,
                     backDelay: 1000,

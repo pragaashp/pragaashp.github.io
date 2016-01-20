@@ -14,7 +14,7 @@ function submitMSG(valid, msg) {
     if (valid) {
         $("#confirmMsg").removeClass().addClass("text-center rubberBand animated").text(msg);
     } else {
-        $("#msgSubmit").removeClass().addClass("pull-left text-danger").text(msg);
+        $("#msgSubmit").removeClass().addClass("pull-left text-danger bounceIn animated").text(msg);
     }
 }
 
